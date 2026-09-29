@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Bell, User } from "lucide-react";
+import { Bell } from "lucide-react";
+import { AuthControls } from "@/components/auth-controls";
 import { Logo } from "@/components/ui/logo";
 
 /* Site header: Vertex lockup + Courses / My Learning nav + bell + avatar.
@@ -36,13 +37,8 @@ export function SiteHeader() {
           >
             <Bell className="size-5" strokeWidth={2} aria-hidden />
           </button>
-          {/* Placeholder avatar: no auth in this task, no photo asset. */}
-          <span
-            aria-hidden
-            className="flex size-9 items-center justify-center overflow-hidden rounded-full bg-neutral-200 text-neutral-500"
-          >
-            <User className="size-5" strokeWidth={2} />
-          </span>
+          {/* Clerk auth controls: Sign in / Sign up when signed out, avatar when signed in. */}
+          <AuthControls />
         </div>
       </div>
       {/* Mobile nav: stacked row under the bar, keeps links reachable. */}
