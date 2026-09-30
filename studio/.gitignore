@@ -5,3 +5,4 @@ dist
 .env.*.local
 schema-extract.json
 *.tsbuildinfo
+scripts/seed/seed.import.ndjson
