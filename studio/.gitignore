@@ -1,0 +1,7 @@
+node_modules
+dist
+.sanity/
+.env.local
+.env.*.local
+schema-extract.json
+*.tsbuildinfo
